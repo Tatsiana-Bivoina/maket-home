@@ -1,0 +1,152 @@
+@import './reset.css';
+@import './fonts.css';
+@import './settings.css';
+.wr-intro {
+    background-image: url("../media/bg_wall.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center bottom;
+}
+
+.header {
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Montserrat-Bold", sans-serif;
+    letter-spacing: -.2px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-left: 36px;
+}
+
+.nav a {
+    color: #fff;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+
+/* wrapper-home */
+
+.wr-home {
+    padding-top: 27.6vh;
+}
+
+.wr-home .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wr-home p {
+    color: #fff;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    margin-bottom: 23px;
+}
+
+.wr-home h1 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 52px;
+}
+
+
+/* WR-SERVICES */
+
+.wr-services {
+    padding-top: 97px;
+    padding-bottom: 97px;
+}
+
+.wr-services .section-title-block {
+    margin-bottom: 73px;
+}
+
+
+/* WR-ABOUT-US */
+
+.wr-about-us {
+    background-color: #f8f8f8;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.wr-about-us .section-title-block {
+    margin-bottom: 67px;
+}
+
+.section-text-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin-bottom: 70px;
+}
+
+.text-block {
+    display: flex;
+    flex: 1;
+}
+
+.text-block p {
+    line-height: 23px;
+    padding-right: 16px;
+}
+
+.slider {
+    display: flex;
+    width: 1140px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    font-family: "Montserrat-Regular", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.work {
+    font-size: 13px;
+    text-align: center;
+}
+
+.team-member {
+    max-width: 264px;
+    width: 100%;
+    margin-right: 28px;
+}
+
+.team-member-img {
+    width: 100%;
+    height: 250px;
+}
+
+.team-member img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
