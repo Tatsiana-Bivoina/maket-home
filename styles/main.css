@@ -81,6 +81,29 @@
     margin-bottom: 73px;
 }
 
+.section-favicons {
+    display: flex;
+}
+
+.fav-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fav-image img {
+    /* width: 40px;
+    height: 40px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-name {
+    font-family: "Montserrat-Regular", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 
 /* WR-ABOUT-US */
 
@@ -125,6 +148,7 @@
     text-align: center;
     font-weight: 600;
     margin-bottom: 13px;
+    margin-top: 19px;
 }
 
 .work {
@@ -132,10 +156,16 @@
     text-align: center;
 }
 
+.name,
+.work {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .team-member {
     max-width: 264px;
     width: 100%;
-    margin-right: 28px;
 }
 
 .team-member-img {
@@ -144,9 +174,36 @@
 }
 
 .team-member img {
-    margin-bottom: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center top;
+}
+
+
+/* the slides */
+
+.slider .slick-slide {
+    margin: 0 16px;
+}
+
+.slider .slick-prev,
+.slick-next {
+    width: 35px;
+    height: 40px;
+    margin: -26px 0;
+    font-size: 0;
+    color: #dddddd;
+    background-color: #8d8d8d;
+    z-index: 2;
+}
+
+.slider .slick-next {
+    right: 15px;
+    /* background-image: url('../media/about_us/fa-angle-right.png') 0 0 / 100% no-repeat; */
+}
+
+.slider .slick-prev {
+    left: 15px;
+    /* background-image: url('../media/about_us/fa-angle-left.png') 0 0 / 100% no-repeat; */
 }
