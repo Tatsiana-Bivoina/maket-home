@@ -74,7 +74,7 @@
 
 .wr-services {
     padding-top: 97px;
-    padding-bottom: 97px;
+    padding-bottom: 91px;
 }
 
 .wr-services .section-title-block {
@@ -85,23 +85,36 @@
     display: flex;
 }
 
-.fav-image {
+.favicon-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.fav-image img {
-    /* width: 40px;
-    height: 40px; */
+.favicon-block img {
+    width: 90px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 28px;
 }
 
 .fa-name {
     font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.fa-text {
+    text-align: center;
+    line-height: 1.8;
 }
 
 
@@ -134,13 +147,16 @@
     padding-right: 16px;
 }
 
-.slider {
+
+/* .slider {
     display: flex;
     width: 1140px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-}
+
+
+} */
 
 .name {
     font-family: "Montserrat-Regular", sans-serif;
@@ -195,15 +211,39 @@
     font-size: 0;
     color: #dddddd;
     background-color: #8d8d8d;
-    z-index: 2;
+    z-index: 1;
+}
+
+.slider .slick-prev:focus,
+.slick-next:focus {
+    background-color: #8d8d8d;
+}
+
+.slider .slick-prev:hover,
+.slick-next:hover {
+    background-color: #c0301c;
+}
+
+.slider .slick-prev:before,
+.slick-next:before {
+    font-family: '';
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    color: white;
+    -webkit-font-smoothing: none;
 }
 
 .slider .slick-next {
     right: 15px;
-    /* background-image: url('../media/about_us/fa-angle-right.png') 0 0 / 100% no-repeat; */
+    background-image: url(../media/about_us/fa-angle-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slider .slick-prev {
     left: 15px;
-    /* background-image: url('../media/about_us/fa-angle-left.png') 0 0 / 100% no-repeat; */
+    background-image: url(../media/about_us/fa-angle-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
